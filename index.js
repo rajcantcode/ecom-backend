@@ -7,6 +7,7 @@ import brandsRouter from "./routes/Brands.js";
 import usersRouter from "./routes/Users.js";
 import authRouter from "./routes/Auth.js";
 import cartRouter from "./routes/Cart.js";
+import ordersRouter from "./routes/Orders.js";
 const server = express();
 
 // middleware
@@ -22,6 +23,7 @@ server.use("/brands", brandsRouter);
 server.use("/users", usersRouter);
 server.use("/auth", authRouter);
 server.use("/cart", cartRouter);
+server.use("/orders", ordersRouter);
 
 main().catch((err) => console.log(err));
 
